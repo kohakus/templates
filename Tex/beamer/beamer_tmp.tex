@@ -1,0 +1,88 @@
+\documentclass[10pt,mathserif,aspectratio=169]{beamer}
+
+% ---------- include packages ----------
+
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pifont}
+\usepackage{color}
+\usepackage{xeCJK}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{subfigure}
+
+% -------- start to write slides ---------
+
+% use preset beamer style
+\input{style.tex}
+
+\author{the author xxx}
+\title{Beamer Title}
+\date{January 1, 2019}
+
+\begin{document}
+% title frame
+\frame[plain]{\titlepage}
+
+% table of contens
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+
+\section{Section :: Anchors}
+\begin{frame}
+  \frametitle{The definition of Anchor}
+  How to define anchor?
+  \begin{itemize}
+  \item definition 1
+  \item definition 2
+  \item definition 3
+  \end{itemize}
+\end{frame}
+
+\subsection{Subsection :: The first definition}
+\begin{frame}
+  \frametitle{The first Definition}
+  blah..blah..
+\end{frame}
+
+\subsection{Subsection :: The second definition}
+\begin{frame}
+  \frametitle{The second Definition}
+  blah..blah..
+\end{frame}
+
+% you can add blcok [] to hide subsections in sidebar
+\subsection[]{Subsection :: The third definition}
+\begin{frame}
+  \frametitle{The third Definition}
+  blah..blah..
+\end{frame}
+
+\section{Section :: Pepes}
+\begin{frame}
+  \frametitle{The definition of Pepe}
+  How to define pepe?
+  \begin{itemize}
+  \item definition 1
+  \item definition 2
+  \end{itemize}
+\end{frame}
+
+\subsection{Subsection :: The first definition}
+\begin{frame}
+  \frametitle{The first Definition}
+  blah..blah..
+\end{frame}
+
+\subsection{Subsection :: The second definition}
+\begin{frame}
+  \frametitle{The second Definition}
+  blah..blah..
+\end{frame}
+\end{document}

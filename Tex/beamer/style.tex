@@ -1,0 +1,96 @@
+% ------------- beamer style settings --------------
+
+% font settings
+\newfontfamily{\geo}{Georgia}
+\newfontfamily{\iosevka}{IosevkaCC Slab}
+\setCJKmainfont{Source Han Serif CN}
+\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamerfont{title}{size*={16}{18},series=\bfseries}
+
+% abbr setting
+\newcommand{\etal}{\textit{et al}.}
+\newcommand{\ie}{\textit{i}.\textit{e}.}
+\newcommand{\eg}{\textit{e}.\textit{g}.}
+
+\useoutertheme[width=3\baselineskip,right]{sidebar}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{itemize item}{$\bullet$}
+\setbeamertemplate{frametitle}
+  {\vspace{-0.5cm}
+   \insertframetitle
+   \vspace{-0.5cm}}
+
+% remove title and author from sidebar
+\makeatletter
+\setbeamertemplate{sidebar \beamer@sidebarside}%{sidebar theme}
+{
+  \beamer@tempdim=\beamer@sidebarwidth%
+  \advance\beamer@tempdim by -6pt%
+  \insertverticalnavigation{\beamer@sidebarwidth}%
+  \vfill
+  \ifx\beamer@sidebarside\beamer@lefttext%
+  \else%
+    \usebeamercolor{normal text}%
+    \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+    \vskip2pt%
+  \fi%
+}%
+\makeatother
+  
+
+% footline setting
+\makeatother
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  % insert author at the bottom
+  %\begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+  %  \usebeamerfont{author in head/foot}\insertshortauthor
+  %\end{beamercolorbox}
+
+  % insert title at the bottom
+  \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle\hspace*{13em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{0ex}
+  \end{beamercolorbox}}
+
+  \vskip0pt%
+}
+\makeatletter
+
+
+% define colors
+\definecolor{bistre}{rgb}{0.24, 0.17, 0.12} % black
+\definecolor{mygrey}{rgb}{0.52, 0.52, 0.51} % grey
+%\definecolor{alizarin}{rgb}{0.82, 0.1, 0.26} % red
+%\definecolor{DarkFern}{HTML}{407428} % green
+%\colorlet{main}{DarkFern!100!white}
+\colorlet{main}{red!70!black}
+%\colorlet{main}{green!50!black}
+\colorlet{text}{bistre!100!white}
+
+
+\setbeamercolor{title}{fg=main}
+\setbeamercolor{frametitle}{fg=main}
+\setbeamercolor{section in toc}{fg=text}
+\setbeamercolor{normal text}{fg=text}
+\setbeamercolor{block title}{fg=main,bg=mygrey!14!white}
+\setbeamercolor{block body}{fg=black,bg=mygrey!10!white}
+\setbeamercolor{qed symbol}{fg=main} 
+\setbeamercolor{math text}{fg=black}
+
+\setbeamercolor{author in head/foot}{fg=black, bg=mygrey!5!white}
+\setbeamercolor{title in head/foot}{fg=black, bg=mygrey!5!white}
+\setbeamercolor{structure}{fg=main, bg=mygrey!10!white}
+
+
+\def\swidth{2.3cm}
+\setbeamersize{sidebar width right=\swidth}
+\setbeamersize{sidebar width left=\swidth}
+\setbeamerfont{title in sidebar}{size=\scriptsize}
+\setbeamerfont{section in sidebar}{size=\tiny}
+
+% beamer size setting
+\setbeamersize{text margin left=-10mm,text margin right=-10mm}

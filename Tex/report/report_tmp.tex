@@ -1,0 +1,83 @@
+\documentclass{scrartcl}
+\usepackage{fontspec}
+\usepackage[table,xcdraw,dvipsnames]{xcolor} %for color
+\definecolor{bg}{rgb}{0.16,0.58,0.39}
+%\colorlet{sectioncolor}{SeaGreen}
+\colorlet{sectioncolor}{bg}
+\colorlet{subsectioncolor}{Gray}
+\makeatletter
+\renewcommand\sectionlinesformat[4]{%
+  \colorbox{#1color}{%
+    \parbox[t]{\dimexpr\textwidth-2\fboxsep\relax}{%
+      \raggedsection\color{white}\@hangfrom{#3}{#4}%
+    }}}
+
+\makeatother
+\newfontfamily{\geo}{Georgia}
+\newfontfamily{\iosevka}{IosevkaCC Slab}
+\newfontfamily{\SChan}{Source Han Serif CN}
+
+\usepackage{ragged2e} %for flushleft
+\usepackage[margin=0.55in]{geometry} %for page size
+\renewcommand\thesection{\Roman{section}}
+\renewcommand\thesubsection{}
+\renewcommand\thesubsubsection{}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pifont}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{xeCJK}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{multirow,makecell}
+\usepackage{diagbox}
+\usepackage{float}
+\usepackage{array}
+\usepackage{booktabs}
+\setCJKmainfont{Source Han Serif CN}
+
+\begin{document}
+%\title{\geo{Graphics Laboratory}}
+\title{}
+\date{}
+\maketitle
+\vspace{-22ex}
+
+\begin{flushleft}
+{\huge \textsc{Weekly Report}}
+\vspace{4ex}
+
+\texttt{2019-2020}  \hspace{1.5cm} \texttt{2019.02.01\;$\sim$\;2019.02.07} \hfill The author xxx
+\vspace{-3ex}
+\end{flushleft}
+\vspace{-4ex}
+
+\section{\geo{Have Done}}
+\begin{itemize}
+\item A
+  \begin{itemize}
+  \item a
+  \item b
+  \item c
+  \end{itemize}
+\item B
+\item C
+\end{itemize}
+  
+\section{\geo Future Plan}
+\begin{itemize}
+\item HHa
+\item HHb
+\end{itemize}
+  
+\section{\geo Problem}
+\begin{itemize}
+\item TTa
+\item TTb
+\end{itemize}
+\section{\geo Report}
+blah..blah..
+\end{document}
+

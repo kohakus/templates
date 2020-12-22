@@ -1,0 +1,18 @@
+Better C++ Syntax
+Bracket Pair Colorizer 2
+C/C++ for Visual Studio Code
+C++ Algorithm Mnemonics
+Chinese (Simplified) Language Pack for Visual Studio Code
+CMake
+Emacs Friendly Keymap
+Haskell Syntax Highlighting
+Highlight
+LaTeX language support
+LaTeX Snippets
+Python Indent
+Syntax Highlight Theme
+Syntax Highlighter
+TabNine
+TODO Highlight
+Trailing Spaces
+vscode-rust-syntax
