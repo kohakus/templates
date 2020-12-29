@@ -1,4 +1,4 @@
-# 2020/10/10
+# 2020/12/29
 # Another development environment setting memo.
 # System OS : Manjaro
 # DE : no DE :)
@@ -176,11 +176,10 @@ conda config --set show_channel_urls yes
 ########################################################################################
 
 # Install Cuda & Cudnn
-# This step is very relaxed under manjaro!
-# Just use yay or yaourt.
+# This step is very relaxed in manjaro!
 # Here is an example of cuda10 & cudnn7, the version is up to you.
 # - install cuda:
-yay -S cuda-10.0 # v-10.0 is the newest version, if this not work, just use yay -S cuda
+pacman -S cuda-10.0 # we select v-10.0 here, if you like, just use `pacman -S cuda` to install the newest version
 # then add Paths to ~/.zshrc
 export CUDA_HOME=/opt/cuda
 export PATH=/opt/cuda/bin:$PATH
@@ -192,7 +191,7 @@ cd /opt/cuda/samples/1_Utilities/deviceQuery
 sudo make
 ./deviceQuery
 # - install cudnn:
-yay -S cudnn7 # as before, if this not work, just use yay -S cudnn
+pacman -S cudnn7 # as before, if you like, just use pacman -S cudnn
 # Done. reboot.
 
 # Font settings
@@ -345,16 +344,14 @@ sudo make install
 # If so, just move them to /usr/local/lib, the problem should be solved.
 # We can also install glfw as package so that they can be found in pkg-config easily:
 sudo pacman -S glfw-x11
-# Now we install GLAD.
+# Now we install GLAD. (can be some other libs, like GLEW or GL3W, but here we recommand GLAD)
 # First download a proper version from http://glad.dav1d.de/
-# note that we should choose these options:
+# note that we should choose these options: (or options according to your opengl version)
 #    Language: 'C/C++'
 #    Specification: 'OpenGL'
 #    API::gl: 'version xxx' (xxx >= 3.3)
 #    Profile: 'Core'
-# and then it will give us a folder that contains /include and /src,
-# move things in /include to /usr/local/include.
-# Note that the C file glad.c in /src should be used as project file.
+# and then it will give us a folder that contains /include and /src, we can use them in our projects.
 # Install GLM lib
 sudo pacman -S glm
 
@@ -397,15 +394,6 @@ sudo pacman -S qtcreator
 # First check /etc/pacman.conf, and uncomment [mutilib] item;
 # Then install wine:
 sudo pacman -S wine winetricks wine-mono wine_gecko
-
-# optional: osu!
-# thanks to ThePooN's AUR package wine-osu, the installation will be easier now
-# The AUR: https://aur.archlinux.org/packages/wine-osu/
-# upstream: https://blog.thepoon.fr/osuLinuxAudioLatency/
-# actually, we just need to run
-sudo pacman -S wine-osu
-# however, the compile time is much long, ThePooN provide a repository for us
-# The whole installation details can be found in upstream.
 
 # optional: 3d construction, point cloud and etc.
 yay -S pcl
