@@ -109,12 +109,13 @@ display-setup-script=/usr/local/bin/optimus.sh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Startup settings
-# - wallpaper setting
+# - Wallpaper setting
 exec --no-startup-id feh --bg-scale "$HOME/Pictures/wallpaper/wallpaper.jpg"
 # if this not work, set a picture in lightdm-settings, and delete default background pictures
 sudo rm /usr/share/backgrounds/*
-# - Using compton(picom) to set transparent. Just modify ~/.config/picom.conf, uncomment opacity terms.
-# don't forget to install feh
+# - Using compton(picom) to set transparent. Just modify ~/.config/picom.conf, uncomment opacity/fading terms.
+# The default picom configuration file can be found in /etc/xdg/
+# - Don't forget to install feh
 pacman -S feh
 
 # Chinese support
