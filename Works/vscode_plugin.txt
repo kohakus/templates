@@ -2,6 +2,7 @@ Better C++ Syntax
 Bracket Pair Colorizer 2
 C/C++ for Visual Studio Code
 C++ Algorithm Mnemonics
+Go
 Chinese (Simplified) Language Pack for Visual Studio Code
 CMake
 Emacs Friendly Keymap
@@ -16,3 +17,12 @@ TabNine
 TODO Highlight
 Trailing Spaces
 vscode-rust-syntax
+vscode-go-syntax
+vscode-icons
+GitLens
+Git Graph
+Git History
+Font Switcher
+Magic Racket
+Markdown Preview Enhanced
+Docker
