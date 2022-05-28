@@ -26,3 +26,4 @@ Font Switcher
 Magic Racket
 Markdown Preview Enhanced
 Docker
+Partial Diff

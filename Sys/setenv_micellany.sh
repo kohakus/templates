@@ -10,3 +10,8 @@ sudo rmmod pcspkr
 # Then install wine:
 sudo pacman -S wine winetricks wine-mono wine_gecko
 # ----------------------------------------------------------------
+
+
+# Dns utils
+sudo pacman -S dnsutils
+# -----------------------------
