@@ -106,6 +106,12 @@ pacman -S nerd-fonts-complete
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # then change oh-my-zsh theme by modifying ~/.zshrc
 ZSH_THEME="myys"
+# list all shell paths
+chsh -l
+# change default shell to zsh for a user (optional)
+chsh -s $zsh_shell_path $user
+# check current shell
+echo $SHELL
 # ---------------------------------------------------------------------------------------------------------------
 
 
