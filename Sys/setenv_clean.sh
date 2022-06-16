@@ -21,6 +21,16 @@ pacman -Sw $package_name
 # ---------------------------------------------
 
 
+# Show yay status
+yay -Ps
+# ---------------------------------------------
+
+
+# Clean yay packages
+yay -c
+# ---------------------------------------------
+
+
 # **Cleaning the package cache**
 # Pacman stores its downloaded packages in /var/cache/pacman/pkg/ and does not remove the old or uninstalled versions automatically.
 # This has some advantages:

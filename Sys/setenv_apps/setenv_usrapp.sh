@@ -13,3 +13,8 @@ sudo pacman -S chromium
 yay -S meshlab
 sudo pacman -S blender
 # ----------------------------
+
+
+# Visual Studio Code
+yay -S visual-studio-code-bin
+# -------------------------------
