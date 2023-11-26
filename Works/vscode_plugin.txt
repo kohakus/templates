@@ -10,6 +10,7 @@ Haskell Syntax Highlighting
 Highlight
 LaTeX language support
 LaTeX Snippets
+LaTeX Workshop
 Python Indent
 Syntax Highlight Theme
 Syntax Highlighter
@@ -27,3 +28,4 @@ Magic Racket
 Markdown Preview Enhanced
 Docker
 Partial Diff
+Better Solarized
